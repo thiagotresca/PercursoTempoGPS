@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="askForGpsPermission"
+        android:id="@+id/askPermissionButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/conceder_permissão" />
+
+    <Button
+        android:id="@+id/activateGpsButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/askPermissionButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:onClick="startGps"
+        android:text="@string/activate_GPS" />
+
+    <Button
+        android:onClick="stopGps"
+        android:id="@+id/deactivateGpsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/activateGpsButton"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/activateGpsButton"
+        android:text="@string/deactivate_GPS" />
+
+    <Button
+        android:id="@+id/startRouteButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activateGpsButton"
+        android:layout_marginTop="5dp"
+        android:onClick="startRoute"
+        android:text="@string/start_route" />
+
+    <Button
+        android:id="@+id/endRouteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/startRouteButton"
+        android:layout_alignBottom="@id/startRouteButton"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/startRouteButton"
+        android:onClick="endRoute"
+        android:text="@string/end_route" />
+
+    <TextView
+        android:id="@+id/DistanceTraveledTextView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startRouteButton"
+        android:layout_marginTop="50dp"
+        android:text="@string/distance_traveled" />
+
+    <TextView
+        android:id="@+id/showDistanceTraveledTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/DistanceTraveledTextView"
+        android:layout_alignBottom="@id/DistanceTraveledTextView"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/DistanceTraveledTextView"
+        android:background="#D8D8D8"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/elapsedTimeTextView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showDistanceTraveledTextView"
+        android:layout_marginTop="10dp"
+        android:text="@string/elapsed_time" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/elapsedTimeTextView"
+        android:layout_alignBottom="@id/elapsedTimeTextView"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/elapsedTimeTextView"
+        android:background="#D8D8D8"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="24sp" />
+
+    <EditText
+        android:onClick="limpaEditText"
+        android:id="@+id/searchEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chronometer"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/search_field"
+        android:inputType="text"
+        android:text="@string/type_search"
+        android:textColor="#606060" />
+
+    <ImageButton
+        android:id="@+id/searchImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/searchEditText"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/searchEditText"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/search_button"
+        android:onClick="search"
+        app:srcCompat="@drawable/search_button" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GPS Distance and Time</string>
+    <string name="conceder_permissão">Ask for GPS Permission</string>
+    <string name="activate_GPS">Activate GPS</string>
+    <string name="deactivate_GPS">Deactivate GPS</string>
+    <string name="start_route">Start Route</string>
+    <string name="end_route">End Route</string>
+    <string name="distance_traveled">Distance Traveled</string>
+    <string name="elapsed_time">Elapsed Time</string>
+    <string name="type_search">What would you like to find?</string>
+    <string name="search_button">Search button</string>
+    <string name="search_field">Search field</string>
+    <string name="no_gps_no_app">App doesn\'t work without GPS permition</string>
+    <string name="gps_activated">GPS Activated</string>
+    <string name="gps_deactivated">GPS Deactivated</string>
+    <string name="gps_already_deactivated">GPS is already deactivated</string>
+</resources>

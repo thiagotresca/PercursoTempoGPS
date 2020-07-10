@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Percurso e Tempo GPS</string>
+    <string name="conceder_permissão">Conceder Permissão GPS</string>
+    <string name="activate_GPS">Ativar GPS</string>
+    <string name="deactivate_GPS">Desativar GPS</string>
+    <string name="start_route">Começar Percurso</string>
+    <string name="end_route">Terminar Percurso</string>
+    <string name="distance_traveled">Distância Percorrida</string>
+    <string name="elapsed_time">Tempo Decorrido</string>
+    <string name="type_search">O que deseja encontrar?</string>
+    <string name="search_button">Botão de procurar</string>
+    <string name="search_field">Campo de busca</string>
+    <string name="no_gps_no_app">Sem o GPS o aplicativo não funciona</string>
+    <string name="gps_activated">GPS Ativado</string>
+    <string name="gps_deactivated">GPS Desativado</string>
+    <string name="gps_already_deactivated">GPS já está desativado</string>
+</resources>
